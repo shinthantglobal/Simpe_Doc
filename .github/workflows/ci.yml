@@ -1,0 +1,17 @@
+name: Docker Portfolio
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking Code
+        uses: actions/checkout@v4
+      
+      - name: Building Docker Container
+        run: docker build . --file Dockerfile --tag my_project:latest
