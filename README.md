@@ -1,4 +1,4 @@
-# Docker & CI/CD Pipeline
+# Docker & CI/CD Pipeline - Dev
 
 This repository contains the configuration for containerizing an application and automating its deployment through a CI/CD pipeline.
 
